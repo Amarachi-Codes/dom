@@ -9,3 +9,14 @@
 // redTicket(2, 2, 2) → 10
 // redTicket(2, 2, 1) → 0
 // redTicket(0, 0, 0) → 5
+
+function redTicket(a, b, c){
+    if(a === b && a === c && b===c && a != 2 && b != 2 && c != 2){
+    return 5
+    }
+    if(a != b && a != c){
+    return 1
+    }if(a === 2 && b===2 && c===2){
+    return 10
+    }return 0
+  }console.log(redTicket(2,2,2));
