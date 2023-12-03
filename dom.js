@@ -11,12 +11,14 @@ let addbtn = document.querySelector(".addbg")
 
 let removebtn = document.querySelector("#removebg")
 
-addbtn.addEventListener("click",() => {
-document.body.style.backgroundColor = "grey";
-});
+
+
+
+addbtn.addEventListener("click",()=>{
+    document.body.style.backgroundColor = "grey"
+})
 
 removebtn.addEventListener("click",()=>{
     document.body.style.backgroundColor = "#fff"
+    removebtn.style.backgroundColor = "grey"
 })
-
-
