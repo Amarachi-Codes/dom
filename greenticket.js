@@ -9,3 +9,12 @@
 // greenTicket(2, 2, 2) → 20
 // greenTicket(1, 1, 2) → 10
 
+function greenTicket(a, b, c){
+    if(a != b && a != c && b != c){
+      return 0
+    }if(a === b && a === c && b === c){
+      return 20
+    }if(a === b || a === c || b===c){
+      return 10
+    }
+  }console.log(greenTicket(1,1,2));
